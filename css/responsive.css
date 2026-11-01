@@ -1,0 +1,78 @@
+/* Keep the original desktop presentation; adapt layout and navigation for smaller screens. */
+.submenu-toggle {display:none;}
+header .gnb li:focus-within .submenu {display:block;}
+a:focus-visible, button:focus-visible {outline:3px solid #3a89cf;outline-offset:4px;}
+.sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+@media (max-width:1248px) {
+  .inner {max-width:1200px;margin-left:24px;margin-right:24px;}
+  #company .inner {width:calc(100% - 48px);}
+}
+@media (max-width:960px) {
+  #business .item ul {gap:24px;}
+  #business .item li {width:calc(50% - 12px);}
+  #business .item li a {box-sizing:border-box;background-size:cover;}
+  #business .item li a .bus_btn {visibility:visible;opacity:1;margin-bottom:0;padding-top:24px;}
+  .ceo_con .ceo_info {width:calc(50% - 24px);}
+  .ceo_con .ceo_info .name {font-size:34px;}
+}
+@media (max-width:640px) {
+  .inner {margin-left:20px;margin-right:20px;}
+  header .inner {height:126px;}
+  header .logo a {top:16px;left:0;width:176px;height:40px;background-size:contain;}
+  header .gnb {left:0;right:0;top:70px;display:flex;justify-content:space-between;}
+  header .gnb > li {display:flex;align-items:center;justify-content:center;width:50%;}
+  header .gnb > li > a {padding:0 12px;font-size:17px;line-height:48px;}
+  .submenu-toggle {display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:0;background:transparent;color:#3a89cf;font:24px sans-serif;cursor:pointer;}
+  header .gnb .submenu {top:48px;left:0;margin-left:0;width:180px;box-sizing:border-box;}
+  header .gnb > li:last-child .submenu {left:auto;right:0;}
+  header .gnb .submenu li {display:block;}
+  header .gnb .submenu li a {width:180px;line-height:44px;font-size:15px;}
+  header .gnb li:hover .submenu, header .gnb li:focus-within .submenu {display:none;}
+  header .gnb li.menu-open .submenu {display:block;}
+  #visual {height:auto;min-height:460px;background-size:cover;}
+  #visual .vis_txt {padding-top:110px;padding-bottom:70px;font-size:16px;line-height:1.6;}
+  #visual .vis_txt h2 {font-size:38px;line-height:1.2;overflow-wrap:anywhere;}
+  .title h3 {font-size:30px;line-height:1.4;}
+  .title .week {font-size:16px;line-height:1.8;}
+  .title .en_sub {font-size:14px;}
+  .mgb60,.mgb70,.mgb80 {margin-bottom:36px;}
+  .mgb100,.mgb120,.mgb140,.mgb160 {margin-bottom:64px;}
+  #business .item ul {gap:20px;}
+  #business .item li {width:100%;}
+  #business .item li a {height:300px;padding:28px;}
+  #business .item li a dl {left:28px;right:20px;bottom:28px;}
+  #business .item li a dt {font-size:26px;line-height:1.4;}
+  #company {height:auto;min-height:480px;background-size:cover;}
+  #company .inner {width:calc(100% - 40px);height:auto;min-height:480px;padding:56px 0;box-sizing:border-box;}
+  #company .title .week br {display:none;}
+  #contact {padding:70px 0;}
+  #contact img {max-width:100%;height:auto;}
+  #sub_visual {height:230px;background-size:cover;}
+  #sub_visual .sub_vis_txt {font-size:34px;}
+  #sub_visual .sub_vis_txt .depth {font-size:14px;line-height:1.6;flex-wrap:wrap;}
+  .sub_title {font-size:34px;line-height:1.4;}
+  #contents img {max-width:100%;height:auto;display:block;}
+  .info_con {padding-top:150px;background-size:auto 180px;}
+  .info_con ul {gap:12px;}
+  .info_con ul li {width:100%;padding:26px;}
+  .info_con ul li p {font-size:18px;line-height:1.5;}
+  .ceo_con {display:block;}
+  .ceo_con .img_area,.ceo_con .ceo_info {width:100%;}
+  .ceo_con .ceo_info {margin-top:36px;}
+  .ceo_con .ceo_info li {font-size:16px;}
+  .ceo_con .ceo_info dl dd {font-size:16px;line-height:1.7;}
+  .history_con {background-size:contain;}
+  .history_con::before {left:12px;}
+  .history_con .year.right,.history_con .year.left {padding-left:38px;padding-right:0;text-align:left;}
+  .history_con .year dt {font-size:34px;}
+  .history_con .year dd {font-size:16px;line-height:1.6;}
+  .history_con .year.left dd {flex-direction:row;}
+  .history_con .year.left dd i {margin-left:0;margin-right:8px;flex-shrink:0;}
+  .host_con .txt_area dt,.server_con .txt_area dt {position:static;font-size:26px;line-height:1.4;margin-bottom:20px;}
+  .host_con .txt_area dd,.server_con .txt_area dd {padding-left:0;font-size:16px;line-height:1.8;}
+  .host_con .txt_area dd br {display:none;}
+  #footer {padding:44px 0;}
+  #footer .f_info {font-size:13px;line-height:1.8;overflow-wrap:anywhere;}
+  #footer .f_info .address hr {display:block;height:8px;}
+  #footer .f_logo {position:static;margin-top:24px;}
+}
