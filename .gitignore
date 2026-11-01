@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.sql
+*.sqlite
+*.sqlite3
+*.bak
+*.log
+id_rsa*
+id_ed25519*
+.ssh/
+config.php
+wp-config.php
